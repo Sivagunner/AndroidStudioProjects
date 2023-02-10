@@ -5,12 +5,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.swipefreshlayout.CourseRVModal
 
 // on below line we are creating a course rv adapter class.
 class CourseRVAdapter(
     // on below line we are passing variables
     // as course list and context
-    private val courseList: ArrayList<CourseRVModal>,
+    private val courseList:List<CourseRVModal>,
     private val context: Context
 ) : RecyclerView.Adapter<CourseRVAdapter.CourseViewHolder>() {
     override fun onCreateViewHolder(
